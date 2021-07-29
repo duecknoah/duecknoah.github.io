@@ -2737,9 +2737,8 @@ button:disabled,
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 1.0;
 	z-index: 1;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .tiles article>.image:after {
@@ -2888,19 +2887,6 @@ body.is-touch .tiles article .content {
 	opacity: 1;
 }
 
-@media screen and (max-width: 1280px) {
-
-	.tiles {
-		margin: -1.25em 0 0 -1.25em;
-	}
-
-	.tiles article {
-		width: calc(33.33333% - 1.25em);
-		margin: 1.25em 0 0 1.25em;
-	}
-
-}
-
 @media screen and (max-width: 980px) {
 
 	.tiles {
@@ -2921,7 +2907,7 @@ body.is-touch .tiles article .content {
 	}
 
 	.tiles article {
-		width: calc(50% - 1.25em);
+		width: 100%;
 		margin: 1.25em 0 0 1.25em;
 	}
 
