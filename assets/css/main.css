@@ -190,7 +190,7 @@ html {
 }
 
 body {
-	background: #ffffff;
+	background: #181A1B;
 }
 
 body.is-preload *,
@@ -212,7 +212,7 @@ body,
 input,
 select,
 textarea {
-	color: #585858;
+	color: #B0AA9F;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 16pt;
 	font-weight: 300;
