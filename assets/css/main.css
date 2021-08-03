@@ -2933,6 +2933,24 @@ button:disabled,
 	margin: 0;
 }
 
+.content>.tags {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tags>li {
+	border-radius: 10%;
+	margin: 0;
+	padding: 0.2em;
+	list-style-type: none;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0.2em 0 0 0.2em;
+}
+
 .tiles article>a .content {
 	-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
 	-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2982,7 +3000,7 @@ body:not(.is-touch) .tiles article:hover>.image {
 
 body:not(.is-touch) .tiles article:hover>.image:before {
 	background-color: #333333;
-	opacity: 0.35;
+	opacity: 0.9;
 }
 
 body:not(.is-touch) .tiles article:hover>.image:after {
