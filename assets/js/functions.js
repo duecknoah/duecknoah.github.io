@@ -13,15 +13,19 @@ const setFilterTag = (tagElement) => {
   }
 
   // Filter elements (Tiles)
-  let articles = $(".tiles>article")
-  articles.show();
+  let articles = $(".tiles>article");
 
-  if (tagElement.id !== "resetFilter") {
-    // TODO: Optimize filtering function. Add transitions on hide
-    let filterBy = tagElement.innerHTML;
-    articles.filter(`:not(:contains('${filterBy}'))`).hide();
+  if (tagElement.id === "resetFilter") {
+    articles.show();
+    return;
   }
 
+  articles.hide();
+  let filterBy = tagElement.innerHTML;
+  articles.find('.tags li').filter(function() {
+    return $(this).html() === filterBy
+  })
+  .parents('article').show()
 }
 
 $(".filterButton").click((e) => {
